@@ -48,24 +48,34 @@ Amazon Web Services (AWS) is a cloud computing platform that offers a wide range
 
 
 2. **Navigate to EC2**: From the AWS Management Console, search for and select "EC2" to access the EC2 Dashboard.
+
 ![Alt text](<EC2 Dashboard.png>)
 
+
 3. **Select Instance and choose Lauch Instance**
+
 ![Alt text](<Launch Instance.png>)
 
 4. **Choose Amazon Machine Image**
+
 ![Alt text](<Choose Image.png>)
+
 5. **Select Instance Type**
+
 ![Alt text](<Select Instance.png>)
+
 6. **Configure Network Settings and Security Groups**
+
 ![Alt text](<Configure Network.png>)
 
 7. **Configure Storage**
+
 ![Alt text](<security group.png>)
 
 ### How to create ssh keypair on AWS
 
 1. Search for "key pair" on search and select key pair (EC2 feature)
+
 ![Alt text](<Search Key Pair.png>)
 
 2. Select "create key pair" on top right 
@@ -77,6 +87,7 @@ Amazon Web Services (AWS) is a cloud computing platform that offers a wide range
 5. Select the format of key file (.pem)
 
 6. Create the key file. 
+
  ![Alt text](KeyPair.png)
 
 #### `After you create the key pair it will generate the keypair and will download the .pem file consist of private key with the .pem extension.` 
@@ -120,6 +131,7 @@ Amazon Web Services (AWS) is a cloud computing platform that offers a wide range
 
 
 7. Check Termination Status
+
 ![Alt text](<Terminate Instance.png>)
 
 
