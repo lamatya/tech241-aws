@@ -234,29 +234,29 @@ sudo apt upgrade -y
 ```
 wget -qO - https://www.mongodb.org/static/pgp/server-3.2.asc | sudo apt-key add -
 ```
-`4.`
+`4. Source List`
 
 ```
 echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | 
 ```
-`5.`
+`5. Source List`
 ```
 sudo tee /etc/apt/sources.list.d/mong$sudo apt update -y
 ```
 
-`6.`
+`6. Install mongo db`
 ```
 sudo apt-get install -y 
 ```
-`7.`
+`7. Downloads the specific verison of mongo db`
 ```
 mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org-shell=3.2.20 mongodb-org-mongos=3.2.20$
 ```
-`8. Configure MongoDB to accept connections from the app VM`
+`8. Configure MongoDB to accept connections from the app VM by changing the bindIP to 0.0.0.0`
 ```
 sudo sed -i 's/bindIp: 127.0.0.1/bindIp: 0.0.0.0/g' /etc/mongod.conf
 ```
-`9. Start and enable MongoDB`
+`9. Start and enable (when you reboot your VM mongo db also starts up) MongoDB`
 ```
 sudo systemctl start mongod
 ```
