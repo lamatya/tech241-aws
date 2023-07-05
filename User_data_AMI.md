@@ -74,6 +74,61 @@ Creating an AMI in AWS allows you to capture the state of an EC2 instance, provi
 ![Alt text](<Add new tag.png>)
 
 
+## IP Address
+
+Public IP address and Private IP Address:
+
+Private IP Address: 
+
+Private ip address allows you to access the virtual machines and communicate directly though the Netwrok Interface Controller and does not require it to go through Network Security Group (NSG)
 
 
+Public IP Address: 
 
+Public IP address needs Network Security Group to communicate with another VM which are in the same Virtual Network. 
+
+
+# Cloud Monitoring
+
+## How to set uo an Alarm for Monitoring resources in AWS.
+
+1. Go to the "View Metrics" on CPU Utilisation on Monitoring platform.
+![Alt text](<View in metrics.png>)
+
+2. Set the custom refresh interval to 1 minute so that the metrics are updated frequently.
+   
+3. Look for the "Create Alarm" and click on it to initiate the alarm creation process.
+
+
+4. In the alarm configuration panel, select a period equal to or greater than 1 minute. 
+   
+5. Set the conditions to "static" since you want a fixed threshold value.
+   
+6. Specify the threshold value you want to use, for example, > 0.3 and Proceed to the next step.
+
+7. Create a new topic for the alarm by providing a name.
+   
+8. Insert your email address as the recipient for the alarm notifications.
+   
+9. Create the topic to confirm the subscription.
+![Alt text](<aws subscription.png>)
+
+10. Review the subscription confirmation details and ensure they are correct. 
+
+# CPU usage alarm
+
+1. Access your dashboard or monitoring platform.
+   
+2. Select the alarm you created.
+   
+3. Look for a red line on the graph, indicating the threshold you assigned to the alarm.
+   
+4. Run a script/command that will generate a spike in CPU usage
+   
+5. Monitor the graph on your dashboard and wait for the CPU usage to exceed the threshold you set.
+![Alt text](Demo-alarm.png)
+   
+6. Once the threshold is crossed, the monitoring system should detect the spike and trigger the alarm.
+   
+7. Then we recevied email associated with the alarm configuration and CPU spike.
+![Alt text](<Email with details.png>)
